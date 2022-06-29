@@ -34,6 +34,8 @@ Styles are scoped by default and you are provided with a wide variety of powerfu
 </div>
 ```
 
+<br />
+
 ## Fascinating built-in support
 
 ### State Management
@@ -64,10 +66,13 @@ export const textStore = writable({
 <p>{ $textStore.message }</p>
 ```
 
+<br />
+
 ### Animations and transitions
 
 You will also find out that svelte makes working with animations extremely easy! Just import `` svelte/transition `` and polish your application in minutes! I'm not going to get into any of the details, but you can find everything at the [official svelte website](https://svelte.dev/)
 
+<br />
 
 ### Final Notes 
 

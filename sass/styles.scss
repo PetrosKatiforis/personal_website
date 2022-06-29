@@ -20,7 +20,7 @@ body {
 
 p {
   max-width: 80ch;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 td, th {
@@ -34,6 +34,8 @@ table {
   text-align: left;
   border-spacing: 0;
   border-collapse: collapse;
+
+  color: $text-color;
 }
 
 // Repsonsive tables

@@ -9,12 +9,15 @@ date = "2022-06-28"
 
 Vim is a text editor that was created back in 1991 by Bram Moolenaar. Despite it's old age and terminal environment it is still utilized by many modern developers today. But why is that the case?
 
+<br />
+
 ### Why not just use Visual Studio Code?
 
 Why not just use a GUI editor in general? In my experience, graphical text editor may be easy to grasp at first but they quickly feel slow. You constantly need to switch from mouse to keyboard and vice versa.
 
 With vim, everything is accessed by the keyboard. The editor is lighting-fast, highly customizable and not just a product of an evil company. The community is large and you can find plugins/plugin managers for any of your personal needs.
 
+<br />
 
 ### What made me switch
 

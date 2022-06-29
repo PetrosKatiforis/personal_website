@@ -35,20 +35,18 @@
 
 pre {
   padding: 1em;
-  font-size: 0.95rem;
-  border: none !important;
-
+  font-size: 0.9rem;
+  
   border-radius: 5px;
 
-  font-weight: normal;
-  margin-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: $bg-code !important;
 
-  border: 1px solid $bg-border;
-  
   overflow-x: scroll;
 
   + pre {
-    margin-top: 0.5em;
+    margin-top: 0;
   }
 
   span {
@@ -58,40 +56,29 @@ pre {
 
 // Really basic typography
 .markdown {
-  margin-bottom: 5em;
-
-  :is(h1, h2, h3, h4, h5, h6) {
-    margin-bottom: 1rem;
-    margin-top: 4rem;
-
-    + p {
-      margin-top: 0;
-    }
-
-    // Headings that are next to headings
-    + :is(h1, h2, h3, h4, h5, h6) {
-      margin-top: 0;
-    }
-  }
-
   p {
     font-size: 1rem;
+    margin-bottom: 1rem;
 
-    margin-top: 3em;
-    line-height: 1.7;
-  
-    ~ p {
-      margin-top: 1em;
-    }
+    color: $text-color;
+    line-height: 1.6;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    color: $text-color;
+    padding-bottom: 0.3em;
+
+    margin-top: 24px;
+    margin-bottom: 16px;
+    line-height: 1.25;
   }
 }
 
 .markdown {
-  h2 { font-size: 1.7rem }
-  h3 { font-size: 1.5rem }
-  h4 { font-size: 1.3rem }
-  h5 { font-size: 1.1rem }
-  h6 { font-size: 1rem }
+  h1 { font-size: 2em }
+  h2 { font-size: 1.5em }
+  h3 { font-size: 1.25em }
+  h4 { font-size: 1em }
 }
 
 

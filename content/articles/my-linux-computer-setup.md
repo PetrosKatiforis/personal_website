@@ -9,9 +9,13 @@ date = "2022-06-28"
 
 I run Arch Linux on an old laptop with 6 GBs of RAM and a 250GB SSD. I've got a wireless logitech mouse and that's about it. Software wise, I use i3 as a tiling window manager. I use the default settings with [alacritty](https://github.com/alacritty/alacritty) and pulse-audio for sound management.
 
+<br />
+
 ### Programming Related
 
 I use nvim for all of my projects. I've got a wide set of plugins that would take a considerable amount of time to list out here. You can find my vim configuration on [this dedicated github repository](https://github.com/PetrosKatiforis/NvimConfig)! For static site generation, including this site, I use [Zola](https://www.getzola.org/), which is sort of like the rust version of Hugo.
+
+<br />
 
 ### Special Applications
 
