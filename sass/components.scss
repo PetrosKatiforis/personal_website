@@ -103,6 +103,12 @@
   }
 }
 
+@include mobile {
+  .image--hero .gradient {
+    display: none;
+  }
+}
+
 @mixin hero-image($path) {
   // Background image with a gradient
   background: 
