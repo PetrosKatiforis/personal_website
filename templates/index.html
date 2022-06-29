@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "macros/accordion.html" as macros %}
+
+{% block head %}
+  <title>Welcome to my website | Pioyi</title>
+  <meta name="description" content="I built this site to serve as a collections of my work. In addition, I've set up a blog where I will be addressing various topics centered around computer technologies and how the industry evolves.">
+
+  <script defer src="{{ get_url(path="js/typewriter.js") }}"></script>
+{% endblock head %}
+
+
+{% block content %}
+  <!-- Main hero section -->
+  <div class="hero">
+    <h2 id="typewritter">Welcome to my website!</h2>
+
+    <p class="mt-1">
+      I built this site to serve as a collections of my work. 
+      In addition, I've set up a bog where I will be addressing various topics centered around computer technologies and how the industry evolves.
+    </p>
+  </div>
+
+  <!-- FAQ section with accordion container -->
+  <div class="page--width" id="faq__container">
+    {{ macros::accordion(
+        state="open",
+        title="What’s your computer setup?",
+        content="I currently run Arch Linux on a cheap laptop. I use the i3 window manager and firefox for navigating/developing on the web. You can find out more via [this aritcle](/articles/my-linux-computer-setup)"
+      )
+    }}
+
+    {{ macros::accordion(
+        title="Which code editor do you use?",
+        content="I currently use nvim for all of my personal project. You can find my nvim configuration on [this dedicated github repository.](https://github.com/PetrosKatiforis/NvimConfig/)"
+      )
+    }}
+
+    {{ macros::accordion(
+        title="What are you working on?",
+        content="You can find all of my projects on my github page. My work centers around web development but I occasionally make games and low-level applications."
+      )
+    }}
+
+    {{ macros::accordion(
+        state="open",
+        title="How can I contact you?",
+        content="You can just send me an email at pkatif@mail.com! I check it out every morning and I will be fast to respond."
+      )
+    }}
+  </div>
+{% endblock content %}
+
+

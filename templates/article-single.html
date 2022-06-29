@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>{{ page.title }} | Pioyi's Website</title>
+  <meta name="description" content="{{ page.description }}">
+{% endblock head %}
+
+{% block content %}
+  <div class="article__info hero">
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+        
+    <div class="article__readtime">
+      <img src="/images/clock.svg" width="24px">
+
+      <p>{{ page.reading_time }}-minute read</p>
+    </div>
+  </div>
+
+  <div class="page--width markdown">
+    {{ page.content | safe }}
+  </div>
+{% endblock content %}

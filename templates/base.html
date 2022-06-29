@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {% block head %}{% endblock head %}
+
+    {% block rss %}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endblock %}
+
+    <!-- Static file loading, i.e. css and javascript -->
+    <link rel="stylesheet" href="{{ get_url(path="styles.css", cachebust=true) }}" />
+    <script defer src="{{ get_url(path="js/main.js", cachebust=true) }}"></script> 
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include "partials/header.html" %}
+    
+    {% block content %}{% endblock content %}
+  </body>
+</html>

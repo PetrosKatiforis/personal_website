@@ -1,0 +1,97 @@
+@import "variables";
+
+.article__info {
+  margin-bottom: 3em;
+
+  h2 {
+    font-size: 1.8rem;
+    max-width: 30ch;
+    margin-bottom: 0.6rem;
+  }
+
+  p {
+    max-width: 60ch;
+  }
+
+  .article__readtime {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+
+    p {
+      font-size: 0.8rem;
+      margin-left: 0.7em;
+    }
+  }
+}
+
+@include mobile {
+  .article__info {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+pre {
+  padding: 1em;
+  font-size: 0.95rem;
+  border: none !important;
+
+  border-radius: 5px;
+
+  font-weight: normal;
+  margin-top: 3em;
+
+  border: 1px solid $bg-border;
+  
+  overflow-x: scroll;
+
+  + pre {
+    margin-top: 0.5em;
+  }
+
+  span {
+    background-color: initial !important;
+  }
+}
+
+// Really basic typography
+.markdown {
+  margin-bottom: 5em;
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+
+    + p {
+      margin-top: 0;
+    }
+
+    // Headings that are next to headings
+    + :is(h1, h2, h3, h4, h5, h6) {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+
+    margin-top: 3em;
+    line-height: 1.7;
+  
+    ~ p {
+      margin-top: 1em;
+    }
+  }
+}
+
+.markdown {
+  h2 { font-size: 1.7rem }
+  h3 { font-size: 1.5rem }
+  h4 { font-size: 1.3rem }
+  h5 { font-size: 1.1rem }
+  h6 { font-size: 1rem }
+}
+
+

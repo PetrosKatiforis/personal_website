@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>My Book Recommendations | Pioyi</title>
+
+  <meta name="description" content="A collection of books that I think anybody shall read. Ranging from classical novels, to modern literature and online programming books">
+{% endblock head %}
+
+{% block content %}
+  <div class="page--width">
+    <div class="image--hero">
+      <p>
+        Here’s where I will be posting a list of books that I think anybody shall read. 
+        Ranging from classical novels, to modern literature and online programming books
+      </p>
+
+      <div class="gradient" id="book-image"></div>
+    </div>
+
+    <div class="table__container">
+      <table class="mt-3">
+        <tr>
+          <th>Title</th>
+          <th>Author(s)</th>
+          <th>Brief Summary</th>
+        </tr>
+        
+        <tr>
+          <td>The Master and the Margarita</td>
+          <td>Mikhail Bulgakov</td>
+          
+          <td>
+            A comedic, surrealistic story of devil's visit to soviet Russia. 
+            Travel to 1930, explore Christianity/Atheism and train your creativity.
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Crime and Punishment</td>
+          <td>Fyodor Dostoevsky</td>
+          
+          <td>
+            Realistic overview of how a crime is carried out and its impact on one's psychology. 
+            The author attempts to talk about morals, which according to Dostoevsky's point of 
+            view are found primarily in religion
+          </td>
+        </tr>
+        
+        <tr>
+          <td>The Grapes of Wrath</td>
+          <td>John Steinbeck</td>
+          
+          <td>
+            The Joads, a farm family, are forced to 
+            migrate due to extreme poverty. They are treated as inferiors by their 
+            own American people and are being exploited. The book circles around the 
+            themes of police brutality, social injustice, racism, sexism, religion and communism.
+          </td>
+        </tr>
+
+        <tr>
+          <td>The Trial</td>
+          <td>Franz Kafka</td>
+          
+          <td>
+            Kafka's "The Trial" stories the life of an individual that is mysteriously 
+            asked to appear in court according to absolutely no evidence and reason. 
+            It states the powerlessness of the individual while being faced with a 
+            totalitarian, corrupt and non-democratic government.
+          </td>
+        </tr>
+
+        <tr>
+          <td>Brave New World & 1984</td>
+          <td>Aldous Huxley & George Orwell</td>
+          <td>
+            <p>
+              I decided to include these books into a single entry, but I would definitely recommend 
+              reading them both! They attempt to predict the possibly dystopian future of our planet.
+            </p>
+
+            <br />
+            
+            <p>
+              It's incredible and perhaps daunting how many of their concepts appear into our modern daily lives. 
+              Pointless wars, soma (addicting substances/habits which make us ignore the world's real problems, 
+              monitor our behavior/protesting and instead provide us with temporary and artificial pleasure as a 
+              form of blindness (e.g. mobile phones, social media)), sacrifice of freedom for stability, 
+              totalitarianism and public opinion control
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Article Vault | Pioyi</title>
+
+  <meta name="description" content="A list of my website's articles.">
+{% endblock head %}
+
+{% block content %}
+  <div class="page--width">
+    <div class="image--hero">
+      <p>
+        Here's where all the blog articles will be accumulated
+        You may also want to take a look at the RSS feed
+      </p>
+
+      <div class="gradient" id="vault-image"></div>
+    </div>
+
+    <ul class="articles mt-3">
+      {% for page in paginator.pages %}
+        <li>
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% macro accordion(title, content, state="") %}
+  <div class="accordion {{ state }}">
+    <div class="accordion__header">
+      <p>{{ title }}</p>
+    </div>
+
+    <div class="accordion__content">
+      <p>{{ content | markdown | safe }}</p>
+    </div>
+  </div>
+{% endmacro accordion %}
+
+

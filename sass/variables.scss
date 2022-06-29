@@ -1,0 +1,18 @@
+// Setting up primary color for website
+
+$page-width: 680px;
+$page-padding-x: 1.5em;
+
+$hero-width: $page-width + 200px;
+
+$bg-body: #F2F2F2;
+$bg-silver: #D9D9D9;
+$bg-lighter: #F2F2F2;
+
+$bg-border: #B3B3B3;
+
+@mixin mobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}

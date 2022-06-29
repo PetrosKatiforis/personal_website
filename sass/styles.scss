@@ -1,0 +1,48 @@
+@import "variables";
+@import "components";
+@import "utils";
+@import "markdown";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Noto Serif", sans-serif;
+}
+
+body {
+  background: $bg-body;
+  padding: 0 $page-padding-x;
+
+  padding-bottom: 6em;
+}
+
+p {
+  max-width: 80ch;
+  font-size: 0.95rem;
+}
+
+td, th {
+  border: 1px solid $bg-border;
+  padding: 0.2em 0.5em;
+  
+  vertical-align: top;
+}
+
+table {
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+// Repsonsive tables
+.table__container {
+  overflow-x: scroll;
+}
+
+// Invisible character that keeps the
+// text from not disappearing when empty
+#typewritter::after {
+  content: "ㅤ",
+}

@@ -1,0 +1,17 @@
+@import "variables";
+
+// Automatically generate utility spacing classes
+@each $space in (1, 2, 3) {
+  .mt-#{$space} { 
+    margin-top: #{$space}em; 
+  }
+
+  .mb-#{$space} { 
+    margin-bottom: #{$space}em; 
+  }
+}
+
+.page--width {
+  max-width: $page-width;
+  margin: 0 auto;
+}
